@@ -17,7 +17,7 @@ function ControlledForm() {
     <>
     
     <Formik
-        initialValues={{ name: "", email: "", password: "" }}
+        initialValues={{ name: "", email: ""}}
         validationSchema={validateSchema}
         onSubmit={(values) => {
           alert(JSON.stringify(values, null, 2));
